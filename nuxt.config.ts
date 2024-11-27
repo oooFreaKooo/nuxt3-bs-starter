@@ -7,7 +7,6 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '@nuxt/image',
         '@nuxt/eslint',
-        'nuxt-particles',
         'nuxt-bootstrap-icons',
     ],
     vite: {
