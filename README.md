@@ -39,7 +39,7 @@ A modern Nuxt 3 starter template configured with Bootstrap 5, featuring light/da
 2. Clone the repository:  
 
    ```bash
-   git clone https://github.com/yourusername/nuxt3bs-starter.git
+   git clone https://github.com/oooFreaKooo/nuxt3bs-stater.git
    cd nuxt3bs-starter
    ```
 
