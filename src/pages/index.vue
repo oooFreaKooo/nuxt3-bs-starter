@@ -1,6 +1,6 @@
 <template>
     <div class="services-page">
-        <Main
+        <MainPage
             :benefits="pageData?.benefits ?? []"
             :services="pageData?.services ?? []"
         />

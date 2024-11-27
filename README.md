@@ -111,11 +111,12 @@ A modern Nuxt 3 starter template configured with Bootstrap 5, featuring light/da
  ┃ ┗ 📂scss
  ┃ ┃ ┗ 📜main.scss
  ┣ 📂components
+ ┃ ┣ 📂Footer
+ ┃ ┃ ┗ 📜AppFooter.vue
  ┃ ┣ 📂Header
  ┃ ┃ ┣ 📜AppHeader.vue
  ┃ ┃ ┗ 📜ThemeButton.vue
- ┃ ┣ 📜AppFooter.vue
- ┃ ┗ 📜Main.vue
+ ┃ ┗ 📜MainPage.vue
  ┣ 📂composables
  ┃ ┗ 📜usePage.ts
  ┣ 📂layouts
