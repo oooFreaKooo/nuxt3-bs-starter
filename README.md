@@ -134,19 +134,6 @@ A modern Nuxt 3 starter template configured with Bootstrap 5, featuring light/da
  ┗ 📜error.vue
 ```
 
----
-
-## Features in Detail ✨
-
-- **Theme Support**: Built-in light/dark theme toggle using Bootstrap's theme system  
-- **Error Handling**: Custom error page with smooth error boundary handling  
-- **Type Safety**: Full TypeScript integration for safer development  
-- **Component Auto-import**: Automatic registration of components  
-- **API Routes**: Preconfigured with CORS support  
-- **Modern Development**: Leverage the latest Nuxt 3 features, including the Composition API  
-
----
-
 ## License 📄
 
 **MIT**
