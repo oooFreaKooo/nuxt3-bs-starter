@@ -15,7 +15,9 @@ A modern Nuxt 3 starter template configured with Bootstrap 5, featuring light/da
 - 🔌 Built-in API implementation with CORS support
 
 ---
+![template-page](https://github.com/user-attachments/assets/1d1eeaf0-8127-4e3b-9a3d-b9679144e7f2)
 
+---
 ## Prerequisites 📋
 
 - **Node.js** (v18+)  
