@@ -1,0 +1,60 @@
+@use "variables" as *;
+
+// Media Query Mixins
+// Usage: @include media-breakpoint-up(md) { ... }
+@mixin media-breakpoint-up($breakpoint) {
+    @if map-has-key($breakpoint-up, $breakpoint) {
+        @media #{map-get($breakpoint-up, $breakpoint)} {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Invalid breakpoint: #{$breakpoint}.";
+    }
+}
+
+// Usage: @include media-breakpoint-down(md) { ... }
+@mixin media-breakpoint-down($breakpoint) {
+    @if map-has-key($breakpoint-down, $breakpoint) {
+        @media #{map-get($breakpoint-down, $breakpoint)} {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Invalid breakpoint: #{$breakpoint}.";
+    }
+}
+
+// Usage: @include media-breakpoint-between(md, lg) { ... }
+@mixin media-breakpoint-between($lower, $upper) {
+    @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+        $min: map-get($breakpoints, $lower);
+        $max: map-get($breakpoints, $upper) - 1;
+
+        @media (min-width: $min) and (max-width: $max) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Invalid breakpoint pair: #{$lower} - #{$upper}.";
+    }
+}
+
+// Container width mixin
+// Usage: @include make-container();
+@mixin make-container($padding-x: 1rem) {
+    width: 100%;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+
+    @each $breakpoint, $container-max-width in $container-max-widths {
+        @include media-breakpoint-up($breakpoint) {
+            max-width: $container-max-width;
+        }
+    }
+}

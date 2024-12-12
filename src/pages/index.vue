@@ -12,7 +12,6 @@ import { usePage } from '~/composables/usePage'
 
 const { pageData, getPageData } = usePage()
 
-// Fetch data when component mounts
 await getPageData()
 </script>
 

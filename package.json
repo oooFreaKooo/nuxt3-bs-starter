@@ -20,12 +20,14 @@
     "nuxt": "^3.13.1",
     "sass": "1.77.6",
     "typescript": "~5.5",
+    "vite-svg-loader": "^5.1.0",
     "vue-tsc": "^2.1.6"
   },
   "dependencies": {
     "@nuxt/image": "^1.8.0",
     "bootstrap": "^5.3.3",
-    "nuxt-bootstrap-icons": "^2.1.0"
+    "nuxt-bootstrap-icons": "^2.1.0",
+    "nuxt-vitalizer": "^0.10.0"
   },
   "packageManager": "yarn@4.5.3"
 }

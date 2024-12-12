@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "rift", sans-serif !important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-display: swap;
+}
+
+p {
+    font-family: "SourceSans3", sans-serif !important;
+}
+
+// Custom text styles
+.text-balance {
+    text-wrap: balance;
+}
+
+// Custom link styles
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Custom list styles
+.list-custom {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        position: relative;
+        padding-left: 1.5em;
+
+        &::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--#{$prefix}primary);
+        }
+    }
+}
+
+// Custom blockquote
+.blockquote-custom {
+    border-left: 4px solid var(--#{$prefix}primary);
+    padding-left: 1rem;
+    font-style: italic;
+
+    footer {
+        margin-top: 0.5rem;
+        font-style: normal;
+        font-size: 0.875em;
+    }
+}

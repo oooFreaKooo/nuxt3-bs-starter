@@ -38,7 +38,7 @@
                             class="mb-2"
                         >
                             <NuxtLink
-                                :to="'/legal/' + item.toLowerCase()"
+                                to="/"
                                 class="text-white text-decoration-none"
                             >
                                 {{ item }}

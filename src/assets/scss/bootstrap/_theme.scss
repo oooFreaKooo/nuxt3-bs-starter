@@ -1,0 +1,63 @@
+:root {
+    // Theme colors
+    --#{$prefix}primary: #{$primary};
+    --#{$prefix}secondary: #{$secondary};
+
+    // Body
+    --#{$prefix}body-color: #{$body-color};
+    --#{$prefix}body-bg: #{$body-bg};
+    --#{$prefix}body-color-rgb: #{to-rgb($body-color)};
+    --#{$prefix}body-bg-rgb: #{to-rgb($body-bg)};
+
+    // Emphasis colors
+    --#{$prefix}emphasis-color: #{$dark};
+    --#{$prefix}emphasis-color-rgb: #{to-rgb($dark)};
+
+    // Secondary colors
+    --#{$prefix}secondary-color: #{rgba($dark, .75)};
+    --#{$prefix}secondary-bg: #{$light};
+
+    // Border colors
+    --#{$prefix}border-color: #{rgba($dark, .175)};
+    --#{$prefix}border-color-translucent: #{rgba($dark, .175)};
+
+    // Link colors
+    --#{$prefix}link-color: #{$primary};
+    --#{$prefix}link-hover-color: #{shade-color($primary, 20%)};
+
+    // Text emphasis
+    --#{$prefix}primary-text-emphasis: #{shade-color($primary, 60%)};
+    --#{$prefix}secondary-text-emphasis: #{shade-color($secondary, 60%)};
+}
+
+@include color-mode(dark) {
+    // Invert the theme colors for dark mode
+    --#{$prefix}primary: #{shade-color($primary, 40%)};
+    --#{$prefix}secondary: #{tint-color($secondary, 40%)};
+
+    // Body colors
+    --#{$prefix}body-color: #{$body-color-dark};
+    --#{$prefix}body-bg: #{$body-bg-dark};
+    --#{$prefix}body-color-rgb: #{to-rgb($body-color-dark)};
+    --#{$prefix}body-bg-rgb: #{to-rgb($body-bg-dark)};
+
+    // Emphasis colors
+    --#{$prefix}emphasis-color: #{$body-emphasis-color-dark};
+    --#{$prefix}emphasis-color-rgb: #{to-rgb($body-emphasis-color-dark)};
+
+    // Secondary colors
+    --#{$prefix}secondary-color: #{$body-secondary-color-dark};
+    --#{$prefix}secondary-bg: #{$body-secondary-bg-dark};
+
+    // Border colors
+    --#{$prefix}border-color: #{$border-color-dark};
+    --#{$prefix}border-color-translucent: #{$border-color-translucent-dark};
+
+    // Link colors
+    --#{$prefix}link-color: #{$link-color-dark};
+    --#{$prefix}link-hover-color: #{$link-hover-color-dark};
+
+    // Text emphasis
+    --#{$prefix}primary-text-emphasis: #{$primary-text-emphasis-dark};
+    --#{$prefix}secondary-text-emphasis: #{$secondary-text-emphasis-dark};
+}

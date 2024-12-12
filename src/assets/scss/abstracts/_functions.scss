@@ -1,0 +1,50 @@
+// Convert px to rem
+@function rem($pixels, $context: 16) {
+    @return ($pixels / $context) * 1rem;
+}
+
+// Convert px to em
+@function em($pixels, $context: 16) {
+    @return ($pixels / $context) * 1em;
+}
+
+// Color functions
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}
+
+// Z-index management
+$z-indexes: (
+    "modal": 1000,
+    "dropdown": 900,
+    "header": 800,
+    "footer": 700,
+    "default": 1
+);
+
+@function z($key) {
+    @return map-get($z-indexes, $key);
+}
+
+// Fluid typography calculation
+@function fluid-type($min-vw, $max-vw, $min-size, $max-size) {
+    $slope: (
+        $max-size - $min-size) / ($max-vw - $min-vw
+    );
+$y-axis-intersection: -1 * $min-vw * $slope + $min-size;
+
+@return clamp(#{$min-size}rem, #{$y-axis-intersection}rem + #{$slope * 100}vw, #{$max-size}rem);
+}
+
+// Strip unit from number
+@function strip-unit($number) {
+    @if type-of($number)=='number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @return $number;
+}

@@ -1,0 +1,110 @@
+// Theme colors
+$primary: #1E293B;
+$secondary: #E2E8F0;
+$tertiary: #3B82F6;
+$success: #059669;
+$info: #0EA5E9;
+$warning: #F59E0B;
+$danger: #DC2626;
+$light: #F8FAFC;
+$dark: #334155;
+
+// Body
+$body-bg: $light;
+$body-color: $dark;
+
+// Theme maps
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+);
+
+// Typography
+
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+
+// Display headings
+$display-font-sizes: (
+    1: 5rem,
+    2: 4.5rem,
+    3: 4rem,
+    4: 3.5rem,
+    5: 3rem,
+    6: 2.5rem
+);
+
+$display-font-style: null;
+$display-font-weight: 300;
+$display-line-height: 1.2;
+
+// Regular headings
+$headings-font-style: null;
+$headings-font-weight: 500;
+$headings-line-height: 1.2;
+$headings-color: inherit;
+
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
+// Dark mode variables
+$body-bg-dark: $dark;
+$body-color-dark: $light;
+
+// Color mode variables
+$color-mode-type: data-bs-theme;
+
+// Bootstrap dark mode overrides
+$primary-text-emphasis-dark: tint-color($primary, 40%);
+$secondary-text-emphasis-dark: tint-color($secondary, 40%);
+$body-emphasis-color-dark: $light;
+$body-secondary-color-dark: rgba($light, .75);
+$body-tertiary-color-dark: rgba($light, .5);
+$body-secondary-bg-dark: shade-color($dark, 10%);
+$body-tertiary-bg-dark: shade-color($dark, 20%);
+$border-color-dark: rgba($light, .175);
+$border-color-translucent-dark: rgba($light, .15);
+$headings-color-dark: inherit;
+$link-color-dark: tint-color($primary, 40%);
+$link-hover-color-dark: tint-color($primary, 60%);
+
+// Header
+$header-height: 80px;
+
+// Breakpoint maps for media queries
+$breakpoint-up: (
+    xs: '(min-width: 0)',
+    sm: '(min-width: 576px)',
+    md: '(min-width: 768px)',
+    lg: '(min-width: 992px)',
+    xl: '(min-width: 1200px)',
+    xxl: '(min-width: 1400px)'
+);
+
+$breakpoint-down: (
+    xs: '(max-width: 575.98px)',
+    sm: '(max-width: 767.98px)',
+    md: '(max-width: 991.98px)',
+    lg: '(max-width: 1199.98px)',
+    xl: '(max-width: 1399.98px)',
+    xxl: '(max-width: 1400px)'
+);
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);

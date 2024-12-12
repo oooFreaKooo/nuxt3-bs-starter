@@ -1,0 +1,57 @@
+// 1. Include functions first (required)
+@import "bootstrap/scss/functions";
+@import "../abstracts/variables";
+@import "bootstrap/scss/variables"; // Bootstrap variables
+@import "bootstrap/scss/variables-dark"; // Bootstrap dark mode variables
+@import "bootstrap/scss/maps"; // Bootstrap maps
+@import "bootstrap/scss/mixins"; // Bootstrap mixins
+@import "bootstrap/scss/utilities"; // Bootstrap utilities
+
+// 2. Layout & Components (Comment out unused components)
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+
+// Forms & Buttons (Essential for most sites)
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/transitions";
+
+// Common Components (Uncomment as needed)
+
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+// @import "bootstrap/scss/card";
+// @import "bootstrap/scss/accordion";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+// @import "bootstrap/scss/offcanvas";
+// @import "bootstrap/scss/placeholders";
+
+// 3. Helpers (Required)
+@import "bootstrap/scss/helpers";
+
+// 4. Utilities API (Required)
+@import "bootstrap/scss/utilities/api";
+
+// 6. Add additional custom code here
+@import "overrides";
+@import "typography";
+@import "breakpoints";

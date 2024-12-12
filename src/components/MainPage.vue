@@ -1,8 +1,15 @@
 <template>
     <main>
         <!-- Hero Section -->
-        <section class="hero-section py-5 d-flex align-items-center">
-            <div class="container py-5">
+        <section class="hero-section py-5 d-flex align-items-center position-relative">
+            <NuxtImg
+                src="/images/top-section-bg.jpeg"
+                class="hero-image"
+                alt="Hero background"
+                width="1200"
+                height="800"
+            />
+            <div class="container py-5 position-relative">
                 <div class="row min-vh-50">
                     <div class="col-12 col-md-8 text-white">
                         <h1 class="display-4 fw-bold mb-4">
@@ -26,10 +33,12 @@
                         :key="index"
                         class="col-12 col-md-4"
                     >
-                        <div class="card h-100 border-0 p-4">
-                            <BootstrapIcon
+                        <div class="card h-100 border-0">
+                            <Icon
                                 :name="benefit.icon"
-                                class="fs-1 mb-3"
+                                class="mb-3"
+                                size="xl"
+                                color="info"
                             />
                             <h3 class="h4 mb-3">
                                 {{ benefit.title }}
@@ -71,11 +80,13 @@
                                         :key="i"
                                         class="mb-2"
                                     >
-                                        <BootstrapIcon
-                                            name="check2"
-                                            class="me-2"
-                                        />
                                         {{ item }}
+                                        <Icon
+                                            name="check2"
+                                            class="me-3"
+                                            size="lg"
+                                            color="success"
+                                        />
                                     </li>
                                 </ul>
                             </div>
@@ -84,8 +95,8 @@
 
                     <div class="col-12 col-md-6">
                         <NuxtImg
-                            src="https://picsum.photos/600/400?random=1"
-                            class="img-fluid rounded"
+                            src="/images/image.jpg"
+                            class="img-fluid rounded shadow"
                             alt="Team working together"
                             width="600"
                             height="400"
@@ -112,10 +123,17 @@ defineProps({
 
 <style scoped>
 .hero-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://picsum.photos/1200/800?random=0');
-  background-size: cover;
-  background-position: center;
-  min-height: 600px;
+    min-height: 600px;
+    position: relative;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
 }
 </style>

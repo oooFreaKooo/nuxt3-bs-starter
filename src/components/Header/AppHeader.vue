@@ -5,13 +5,13 @@
                 to="/"
                 class="navbar-brand"
             >
-                <img
+                <NuxtImg
                     src="https://www.freeiconspng.com/thumbs/logo-design/rainbow-logo-design-transparent-0.png"
                     alt="Logo Image"
                     height="40"
                     width="80"
                     class="d-inline-block align-text-top"
-                >
+                />
             </NuxtLink>
 
             <button
@@ -34,7 +34,7 @@
                         class="nav-item"
                     >
                         <NuxtLink
-                            class="nav-link text-white"
+                            class="nav-link text-white mx-2"
                             :to="item.href || '#'"
                         >
                             {{ item.text }}

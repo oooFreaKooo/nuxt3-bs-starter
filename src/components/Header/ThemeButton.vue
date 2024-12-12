@@ -3,7 +3,7 @@
         class="btn btn-link nav-link creative-theme-btn text-white"
         @click="toggleTheme"
     >
-        <BootstrapIcon
+        <Icon
             :name="themeIcon"
         />
     </button>

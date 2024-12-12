@@ -19,9 +19,9 @@
 
                         <div class="error-divider">
                             <div class="line bg-dark" />
-                            <BootstrapIcon
+                            <Icon
                                 name="exclamation-circle"
-                                class="text-danger"
+                                color="danger"
                             />
                             <div class="line bg-dark" />
                         </div>

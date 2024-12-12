@@ -5,7 +5,6 @@
     >
         <div class="content-wrapper">
             <AppHeader :menu-items="pageData?.menuItems" />
-
             <slot />
             <AppFooter :legal-items="pageData?.legalItems" />
         </div>

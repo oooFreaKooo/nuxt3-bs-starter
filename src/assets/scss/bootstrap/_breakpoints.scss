@@ -1,0 +1,45 @@
+// Bootstrap Breakpoint Overrides
+$grid-breakpoints: (
+    xs: 0,
+    sm: 676px,
+    md: 992px,
+    lg: 1100px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+// Container max-widths
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+);
+
+// Dark mode configuration
+$color-mode-type: data-bs-theme;
+
+// Dark mode colors
+$body-bg-dark: $dark;
+$body-color-dark: $light;
+$body-emphasis-color-dark: $light;
+$body-secondary-color-dark: rgba($light, .75);
+$body-tertiary-color-dark: rgba($light, .5);
+$body-secondary-bg-dark: shade-color($dark, 10%);
+$body-tertiary-bg-dark: shade-color($dark, 20%);
+
+// Dark mode text emphasis
+$primary-text-emphasis-dark: tint-color($primary, 40%);
+$secondary-text-emphasis-dark: tint-color($secondary, 40%);
+
+// Dark mode borders
+$border-color-dark: rgba($light, .175);
+$border-color-translucent-dark: rgba($light, .15);
+
+// Dark mode links
+$link-color-dark: tint-color($primary, 40%);
+$link-hover-color-dark: tint-color($primary, 60%);
+
+// Dark mode headings
+$headings-color-dark: inherit;
